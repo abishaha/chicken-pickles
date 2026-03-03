@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spicy Chicken Pickle Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🔥 Spicy Chicken Pickle Store 🔥</h1>
+    <p>Homemade | Fresh | Hygienic</p>
+</header>
+
+<section class="products">
+
+    <div class="product">
+        <img src="images/pickle1.jpg" alt="Classic Chicken Pickle">
+        <h2>Classic Chicken Pickle</h2>
+        <p>Rs. <span class="price">500</span></p>
+        <button onclick="addToCart('Classic Chicken Pickle', 500)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="images/pickle2.jpg" alt="Extra Spicy Chicken Pickle">
+        <h2>Extra Spicy Chicken Pickle</h2>
+        <p>Rs. <span class="price">650</span></p>
+        <button onclick="addToCart('Extra Spicy Chicken Pickle', 650)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="images/pickle3.jpg" alt="Garlic Chicken Pickle">
+        <h2>Garlic Chicken Pickle</h2>
+        <p>Rs. <span class="price">600</span></p>
+        <button onclick="addToCart('Garlic Chicken Pickle', 600)">Add to Cart</button>
+    </div>
+
+</section>
+
+<section class="cart">
+    <h2>🛒 Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <h3>Total: Rs. <span id="total">0</span></h3>
+    <button onclick="confirmOrder()">Confirm Order</button>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
